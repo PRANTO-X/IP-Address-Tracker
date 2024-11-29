@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>IP Address Tracker</title>
+</head>
+<body>
+  <div class="container">
+    <h1>IP address tracker</h1>
+    <div class="input-field">
+      <input type="text" class="input" placeholder="Search for any IP address or domain">
+      <div class="error-msg">*Invalid ip address</div>
+      <button class="search-btn"><img src="images/icon-arrow.svg" alt=""></button>
+    </div>
+    
+    
+    <div class="data-container">
+      <div class="data">
+        <div class="info-container">
+          <div class="info-title">IP Adress</div>
+        <div class="info ip-address"></div>
+        </div>
+      </div>
+  
+      <div class="data location-container">
+        <div class="info-container ">
+          <div class="info-title">LOCATION</div>
+        <div class="info location"></div>
+        </div>
+      </div>
+  
+      <div class="data time-zone-container">
+        <div class="info-container ">
+          <div class="info-title">TIME ZONE</div>
+        <div class="info time-zone"></div>
+        </div>
+      </div>
+  
+      <div class="data isp-container">
+        <div class="info-container ">
+          <div class="info-title">ISP</div>
+        <div class="info isp"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div id="map"></div>
+  
+  
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="JS/main.js"></script>
+</body>
+</html>
